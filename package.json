@@ -7,6 +7,8 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "jest src",
+    "loki:update": "npm run build-storybook && npx loki update --requireReference --reactUri file:./storybook-static",
+    "loki:approve": "npx loki approve",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
